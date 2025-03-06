@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { background-color: #f8f8f8; padding: 10px; text-align: center; }
+        .postagem { margin: 20px 0; }
+        .comentarios { margin: 20px 0; }
+        .comentario { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+    <section class="postagem">
+        <h2>Título da Postagem</h2>
+        <p>Conteúdo da postagem do blog.</p>
+    </section>
+    <section class="comentarios">
+        <h2>Comentários</h2>
+        <form action="envio_comentario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="comentario">Comentário:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="comentario">
+            <p><strong>Nome do Comentador:</strong> Comentário enviado.</p>
+        </div>
+        <!-- Mais comentários podem ser adicionados aqui -->
+    </section>
+</body>
+</html>

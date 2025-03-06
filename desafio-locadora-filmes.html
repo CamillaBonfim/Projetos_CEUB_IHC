@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Filmes</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { text-align: center; padding: 20px; }
+        .filme { margin: 20px 0; }
+        .filme video { max-width: 100%; height: auto; }
+        .estrelas { display: flex; justify-content: center; margin-top: 10px; }
+        .estrelas input { display: none; }
+        .estrelas label { font-size: 2em; color: #ccc; cursor: pointer; }
+        .estrelas input:checked ~ label { color: gold; }
+        .estrelas label:hover, .estrelas label:hover ~ label { color: gold; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Filmes</h1>
+    </header>
+    <section class="filme">
+        <h2>Filme 1</h2>
+        <video controls>
+            <source src="caminho/para/video1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="estrelas">
+            <input type="radio" id="estrela5-1" name="estrelas1" value="5">
+            <label for="estrela5-1">★</label>
+            <input type="radio" id="estrela4-1" name="estrelas1" value="4">
+            <label for="estrela4-1">★</label>
+            <input type="radio" id="estrela3-1" name="estrelas1" value="3">
+            <label for="estrela3-1">★</label>
+            <input type="radio" id="estrela2-1" name="estrelas1" value="2">
+            <label for="estrela2-1">★</label>
+            <input type="radio" id="estrela1-1" name="estrelas1" value="1">
+            <label for="estrela1-1">★</label>
+        </div>
+    </section>
+    <section class="filme">
+        <h2>Filme 2</h2>
+        <video controls>
+            <source src="caminho/para/video2.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="estrelas">
+            <input type="radio" id="estrela5-2" name="estrelas2" value="5">
+            <label for="estrela5-2">★</label>
+            <input type="radio" id="estrela4-2" name="estrelas2" value="4">
+            <label for="estrela4-2">★</label>
+            <input type="radio" id="estrela3-2" name="estrelas2" value="3">
+            <label for="estrela3-2">★</label>
+            <input type="radio" id="estrela2-2" name="estrelas2" value="2">
+            <label for="estrela2-2">★</label>
+            <input type="radio" id="estrela1-2" name="estrelas2" value="1">
+            <label for="estrela1-2">★</label>
+        </div>
+    </section>
+</body>
+</html>

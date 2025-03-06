@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { background-color: #f8f8f8; padding: 10px; text-align: center; }
+        .produto { margin: 20px 0; }
+        .produto img { max-width: 100%; height: auto; }
+        .carrinho { background-color: #f0f0f0; padding: 10px; margin-top: 20px; }
+    </style>
+    <script>
+        function adicionarAoCarrinho(produto) {
+            const carrinho = document.getElementById('carrinho');
+            const item = document.createElement('div');
+            item.textContent = produto;
+            carrinho.appendChild(item);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Minha Loja Online</h1>
+        <a href="#carrinho">Carrinho de Compras</a>
+    </header>
+    <section id="produtos">
+        <div class="produto">
+            <h2>Produto 1</h2>
+            <img src="caminho/para/imagem1.jpg" alt="Imagem do Produto 1">
+            <p>Descrição do Produto 1.</p>
+            <p>Preço: R$ 100,00</p>
+            <button onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <h2>Produto 2</h2>
+            <img src="caminho/para/imagem2.jpg" alt="Imagem do Produto 2">
+            <p>Descrição do Produto 2.</p>
+            <p>Preço: R$ 200,00</p>
+            <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <h2>Produto 3</h2>
+            <img src="caminho/para/imagem3.jpg" alt="Imagem do Produto 3">
+            <p>Descrição do Produto 3.</p>
+            <p>Preço: R$ 300,00</p>
+            <button onclick="adicionarAoCarrinho('Produto 3')">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+    <section id="carrinho" class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <!-- Itens adicionados ao carrinho aparecerão aqui -->
+    </section>
+</body>
+</html>
